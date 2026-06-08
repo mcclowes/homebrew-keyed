@@ -6,7 +6,7 @@ cask "keyed" do
   desc "Native macOS text expansion tool"
   homepage "https://github.com/mcclowes/keyed"
 
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "Keyed.app"
 
