@@ -33,3 +33,10 @@ Download `Keyed.zip` from the [latest release](https://github.com/mcclowes/keyed
 extract it, and move `Keyed.app` to Applications.
 
 Source and build instructions are in the [Keyed repository](https://github.com/mcclowes/keyed).
+
+## Checks
+
+GitHub Actions checks every push and pull request with stable Homebrew on macOS
+26. It checks cask style, runs the strict cask audit, and fetches the release
+archive to verify its checksum. The job checks the current tap checkout and
+doesn't install or launch Keyed.
